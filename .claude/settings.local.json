@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(latexmk -C songs.tex)",
+      "Bash(latexmk -pdf songs.tex)"
+    ]
+  }
+}
