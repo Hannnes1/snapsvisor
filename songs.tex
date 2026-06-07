@@ -6,8 +6,35 @@
 \usepackage{parskip}
 \usepackage{microtype}
 
-\newcommand{\snapsname}[1]{\vspace{2em}{\footnotesize\scshape #1}\par\nopagebreak[4]\vspace{-1.5em}}
-\newcommand{\melodi}[1]{\vspace{-\parskip}{\small\itshape Melodi: #1}\par\nopagebreak[4]\smallskip}
+\title{Snapsvisor\\ \small Midsommar 2026}
+\author{}
+\date{}
+
+\newcounter{snapsnummer}
+\newcommand{\snapsname}{%
+  \stepcounter{snapsnummer}%
+  \vspace{2em}{\footnotesize\scshape \thesnapsnummer.\space
+  \ifcase\value{snapsnummer}%
+    \or Helan%
+    \or Halvan%
+    \or Tersen%
+    \or Kvarten%
+    \or Kvinten%
+    \or Sexten%
+    \or Septen%
+    \or Rivan%
+    \or Räfflan%
+    \or Rännan%
+    \or Smuttan%
+    \or Smuttans unge%
+    \or Lilla Manasse%
+    \or Lilla Manasses broder%
+    \or Femton droppar%
+    \or Kreaturens återuppståndelse%
+    \or Professorns klagan (Absolut sista supen)%
+    \or Ett evigt liv (Den bleka dödens dryck)%
+  \fi}\par\vspace{-1.75em}}
+\newcommand{\melodi}[1]{\vspace{-\parskip}{\small\itshape Melodi: #1}\par\smallskip}
 
 % Song section formatting
 \titleformat{\section}[block]{\large\bfseries\centering}{}{0em}{}
@@ -17,14 +44,12 @@
 \centering
 
 \begin{titlepage}
-  \vspace*{4cm}
-  {\Huge\bfseries Snapsvisor}\\[1em]
-  \vfill
+  \maketitle
+  \thispagestyle{empty}
 \end{titlepage}
 
-\snapsname{Helan}
+\snapsname
 \section{Helan går}
-
 Helan går,\\
 sjung hopp falleri faderallan lej,\\
 helan går,\\
@@ -34,10 +59,23 @@ han inte heller halvan får.\\
 Helan går,\\
 sjung hopp faderallan lej.
 
-\snapsname{Halvan}
+\snapsname
+\section{Halvan}
+\melodi{Hur länge skall i norden}
+Hur länge skall på borden\\
+den lilla halvan stå\\
+Skall snart ej höras orden\\
+Låt halvan gå, Låt gå!\\
+Det ärvda vikingsinne\\
+till bägarn trår igen,\\
+och helans trogna minne\\
+i halvan går igen
+
+\newpage
+
+\snapsname
 \section{Små nubbarna}
 \melodi{Små grodorna}
-
 Små nubbarna, små nubbarna er vill jag inte se.\\
 Små nubbarna, små nubbarna er vill jag inte se.\\
 I glasen på borden ska ni ej vara mer.\\
@@ -45,19 +83,9 @@ I glasen på borden ska ni ej vara mer.\\
 För ni ska ner, för ni ska ner, för ni ska ner i mig,\\
 För ni ska ner, för ni ska ner, för ni ska ner i mig.
 
-\newpage
-
-\snapsname{Tersen}
-\section{Ingemar Bergman}
-
-Tystnad. Tagning!
-
-
-
-\snapsname{Kvarten}
+\snapsname
 \section{Jag hade en gång en snaps}
 \melodi{Jag hade en gång en båt}
-
 Jag hade en gång en snaps,\\
 Jag hörde en ton slås an.\\
 Så sjöng vi en liten sång\\
@@ -66,10 +94,9 @@ Svara mej du: Var är den nu?\\
 Jag bara undrar: Var är den nu?
 
 
-\snapsname{Kvinten}
+\snapsname
 \section{Tänk om jag hade lilla nubben}
 \melodi{Hej tomtegubbar}
-
 Tänk om jag hade lilla nubben uppå ett snöre i halsen,\\
 tänk om jag hade lilla nubben uppå ett snöre i halsen.\\
 Jag skulle dra den upp och ner,\\
@@ -78,20 +105,18 @@ Tänk om jag hade lilla nubben uppå ett snöre i halsen!
 
 \newpage
 
-\snapsname{Sexten}
+\snapsname
 \section{Sån är spriten}
 \melodi{Sånt är livet}
-
 Sån är spriten, ja sån är spriten,\\
 Så mycket brännvin finns det här.\\
 Den sup man ratar, den tar nån annan,\\
 Så ta nu snapsen som du har kär.
 
 
-\snapsname{Septen}
+\snapsname
 \section{Till spritbolaget ränner jag}
 \melodi{Emils sång}
-
 Till spritbolaget ränner jag\\
 Och bankar på dess port.\\
 Jag vill ha nåt' som bränner bra\\
@@ -112,22 +137,116 @@ Hurra, nu kan jag bli full och glad.\\
 Den röda drycken rann ju ner.\\
 Nu kan jag inte se nåt mer.
 
+\newpage
 
-\snapsname{Rivan}
-\section{Siffervisan}
-\melodi{Ritsch, ratsch, filibom}
+\snapsname
+\section{Hell and gore}
+\melodi{Helan går}
+Hell and gore,\\
+Chung Hop father Allan Allan ley.\\
+Hell and gore,\\
+Chung Hop father Allan ley.\\
+Oh handsome in the hell and tar,\\
+hand hell are in the half and four.\\
+Hell and gore,\\
+Chung Hop father Allan ley.
 
-1 2 75 6 7 75 6 7 75 6 7\\
-1 2 75 6 7 75 6 7 73\\
-107 103 102 107 6 19 27\\
-17 18 16 15 13 19 14 17\\
-19 16 15 11 9 47 -- hej!
+\snapsname
+\section{Vi äro små humlor}
+\melodi{Här kommer Karl Alfred Boy}
+Vi äro små humlor vi, bbzzz bbzzz\\
+vi äro små humlor vi, bbzzz bzzzz\\
+vi äro små humlor som tar oss en geting\\
+vi äro små humlor vi, bbzzz bbzzz
 
+Vi äro små fiskar vi, blubb blubb\\
+vi äro små fiskar vi, blubb blubb\\
+vi äro små fiskar som tar oss en kallsup\\
+vi äro små fiskar vi, blubb blubb
 
-\snapsname{Räfflan}
+Vi äro små änglar vi, flax flax\\
+vi äro små änglar vi, flax flax\\
+vä äro små änglar som tar oss en DJÄVEL\\
+vi äro små änglar vi, flax flax
+
+\newpage
+
+\snapsname
+\section{Finsk snapsvisa}
+Inte nu... men nu.
+
+\snapsname
+\section{Bamses festvisa}
+\melodi{Bamses signaturmelodi}
+Jag ska festa, ta det lugnt med spriten,\\
+ha det roligt utan att va' full.\\
+Inte krypa runt med festeliten,\\
+ta det varligt för min egen skull.
+
+Först en öl i torra strupen,\\
+efter det så kommer supen,\\
+i med vinet, ned med punschen\\
+sist en groggbuffé
+
+Jag är skitfull, däckar först av alla,\\
+missar festen, men vad gör väl de'.\\
+Blandar hejdlöst öl och gammal filmjölk,\\
+kastar upp på bordsdamen bredve'.
+
+Först en öl i torra strupen,\\
+efter det så kommer supen,\\
+i med vinet, ned med punschen\\
+sist en groggbuffé
+
+Spyan rinner ner för ylleslipsen,\\
+raviolin torkar i mitt hår.\\
+Vem har lagt mig här i pissoaren,\\
+vems är gaffeln i mitt högra lår?
+
+\newpage
+
+\snapsname
+\section{Lille sup}
+\melodi{Lille katt}
+Lille sup, lille sup,\\
+Lille söte supen.\\
+Nu ska du, nu ska du,\\
+Ner igenom strupen.
+
+\snapsname
+\section{Strejk på Pripps}
+\melodi{I natt jag drömde}
+I natt jag drömde något som\\
+jag aldrig drömt förut.\\
+Jag drömde det var strejk på Pripps\\
+och alla ölen var slut\\
+Jag drömde om en jättesal\\
+där ölen stod på rad.\\
+Jag svepte väl ett tjugotal\\
+och reste mig och sa:
+
+Armen i vinkel, blicken i skyn,\\
+så var det menat, whisky och renat.\\
+Vårt mål alkohol, för den som tål.\\
+Skål!
+
+\newpage
+
+\snapsname
+\section{Jag tror, jag tror}
+\melodi{Jag tror på sommaren}
+Jag tror, jag tror på akvavit\\
+jag tror, jag tror på dynamit\\
+den ger en kraft att sjunga ut\\
+och inga krämpor blir akut.\\
+Man glömmer vardagslivets jäkt\\
+och känner stundens ruseffekt.\\
+En snaps, en skål, en truddelutt\\
+och sen så tar vi våran hutt.
+
+\snapsname
 \section{Idas snapsvisa}
 \melodi{Idas sommarvisa}
-
 Ni ska inte tro vi blir fulla\\
 ifall inte vi sätter fart.\\
 Och gör så att glasen blir fyllda\\
@@ -139,34 +258,41 @@ som varar till följande år.
 
 \newpage
 
-\snapsname{Rännan}
-\section{Lille sup}
-\melodi{Lille katt}
+\snapsname
+\section{Jag är en liten tulipan}
+\melodi{Med en enkel tulpan}
+Jag är en liten undulat
+som får så dålig mat
+för dom jag bor hos
+ja, dom jag bor hos
+dom är så snåla!
+Dom ger mig fisk varenda dag
+och det vill jag inte ha
+jag vill ha brännvin, jag vill ha brännvin
+och Coca-Cola!
 
-Lille sup, lille sup,\\
-Lille söte supen.\\
-Nu ska du, nu ska du,\\
-Ner igenom strupen.
+Jag är en gammal dromedar
+som inte har mycket kvar
+och dom jag bor hos
+ja, dom jag bor hos
+dom är så sura!
+Dom ger mig vatten i en hink
+det tycker jag smakar pink
+jag vill ha brännvin
+jag vill ha brännvin
+och Angostura!
 
-\snapsname{Smuttan}
-\section{Hell and gore}
-\melodi{Helan går}
+\snapsname
+\section{Ingemar Bergman}
+Tystnad. Tagning!
 
-Hell and gore,\\
-Chung Hop father Allan Allan ley.\\
-Hell and gore,\\
-Chung Hop father Allan ley.\\
-Oh handsome in the hell and tar,\\
-hand hell are in the half and four.\\
-Hell and gore,\\
-Chung Hop father Allan ley.
-
-\snapsname{Smuttans unge}
-\snapsname{Lilla Manasse}
-\snapsname{Lilla Manasses broder}
-\snapsname{Femton droppar}
-\snapsname{Kreaturens återuppståndelse}
-\snapsname{Professorns klagan (Absolut sista supen)}
-\snapsname{Den bleka dödens dryck}
+\snapsname
+\section{Siffervisan}
+\melodi{Ritsch, ratsch, filibom}
+1 2 75 6 7 75 6 7 75 6 7\\
+1 2 75 6 7 75 6 7 73\\
+107 103 102 107 6 19 27\\
+17 18 16 15 13 19 14 17\\
+19 16 15 11 9 47 -- hej!
 
 \end{document}
